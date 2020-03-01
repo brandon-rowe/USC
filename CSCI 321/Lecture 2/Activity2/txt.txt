@@ -1,0 +1,5 @@
+1. Progression <k>
+2. GeoProgression extends Progression<Double>
+3. Main
+	Insert
+		Print Progression
