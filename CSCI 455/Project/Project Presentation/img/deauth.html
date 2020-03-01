@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deauthorization Attack</title>
+    <meta name="description" content="CSCI 455 Deauthorization Attack">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+    <!-- CSS WebSlides -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+
+    <!-- Optional - CSS SVG Icons (Font Awesome) -->
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+
+    <!-- FAVICONS -->
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+
+  </head>
+  <body>
+    <header role="banner">
+      <nav role="navigation">
+        <!--<p class="logo"><a href="index.html" title="Security">Security</a></p>-->
+        <ul>
+          <li class="github">
+            <a rel="external" href="https://github.com/brandon-rowe/Security/455/Project" title="Github">
+              <svg class="fa-github">
+                <use xlink:href="#fa-github"></use>
+              </svg>
+              <em>brandon-rowe</em>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <!-- Quick Guide
+          - Each parent <section> in the <article id="webslides"> element is an individual slide.
+          - Vertical sliding = <article id="webslides" class="vertical">
+          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
+        -->
+
+        <section>
+         <span class="background" style="background-image:url('static/images/<!--landing.jpg-->')"></span>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap aligncenter">
+            <h1><strong>Deauthorization Attacks on<br>Wireless Networks </br></strong></h1>
+			
+            <!--<p>
+              <a href="https://webslides.tv/webslides-latest.zip" class="button zoomIn" title="Download WebSlides for free">
+                <svg class="fa-cloud-download">
+                  <use xlink:href="#fa-cloud-download"></use>
+                </svg>
+                BKJ
+              </a>
+            </p>-->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        
+        <!--<section>
+          <!--.wrap = container (width: 90%) --
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>WebSlides is really easy</strong></h3>
+                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
+                <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so fast</strong>.</p>
+              </div>
+              <!-- .end .column --
+              <div class="column">
+                <pre>&lt;article id="webslides"&gt;
+  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
+  &lt;section&gt;
+    &lt;h1&gt;Design for trust&lt;/h1&gt;
+  &lt;/section&gt;
+  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
+  &lt;section class="bg-primary"&gt;
+    &lt;div class="wrap"&gt;
+      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
+    &lt;/div&gt;
+  &lt;/section&gt;
+&lt;/article&gt;
+</pre>
+              </div>
+              <!-- .end .column --
+            </div>
+            <!-- .end .grid --
+          </div>
+          <!-- .end .wrap --
+        </section>-->
+        <!--<section>
+          <div class="wrap">
+            <h2>Presentation Roadmap</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <span>&rarr;</span>
+                    Introduction
+                  </h2>
+                  Introduce presenters.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-link">
+                      <use xlink:href="#fa-link"></use>
+                    </svg>
+                    Attacks
+                  </h2>
+                  Detail attack types.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-list-alt">
+                      <use xlink:href="#fa-list-alt"></use>
+                    </svg>
+                    Myths
+                  </h2>
+                  Specify the myths to bust.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-refresh">
+                      <use xlink:href="#fa-refresh"></use>
+                    </svg>
+                    Tests
+                  </h2>
+                  Demonstrate attacks & outcomes.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-adjust">
+                      <use xlink:href="#fa-adjust"></use>
+                    </svg>
+                    Discoveries
+                  </h2>
+                  Present findings & alternatives.
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-check">
+                      <use xlink:href="#fa-check"></use>
+                    </svg>
+                    Conclusion
+                  </h2>
+                  Determine myth or fact.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>-->
+        <section>
+          <!--.wrap = container (width: 90%) -->
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>How it Works </strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>Attack on Availability</h2>
+                  <p>It’s a type of Denial of Service attack that disrupts communication between a user a wireless access point. It exploits management frames that are normally used to maintain the link between the two devices. By spoofing either the AP or the client a hacker can constantly send these frames disconnecting the user and preventing them from reconnecting. </p>
+                </li>
+                <li>
+                  <h2>ESP8266 Microcontroller</h2>
+                  <p>A cheap and easily programmable microcontroller with a full TCP/IP stack. A Linux machine with a wireless NIC and aircrack-ng can be used as substitute. You specify either a client or a access point and the device begins to spoof the device and constantly sends deauthentication frames disconnecting the client and forcing them to reconnect. </p>
+                </li>
+                <li>
+                  <h2>Users Perspective</h2>
+                  <p>Their device constantly disconnected. They can continue to try to reauthticate and even if they do reconnect they will eventually get kicked back off the network as long as the attacker is sending the frames.</p>
+                </li>
+				<li>
+                  <h2>Countermeasure 802.11w</h2>
+                  <p>Amendment to the IEEE 802.11 standard to protect these management frames. Sometimes labled as Protected Management Frames (PMF). Not all devices support 802.11w. If an access point is setup to require the standard devices that do not support cannot associate the WLAN.</p>
+                </li>
+              </ul>
+            </div>
+            <!-- .end .bg-white shadow -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <section>
+          <div class="wrap">
+            <h2><strong>Demonstration of Attacks</strong></h2>
+            <p>Files on <a href="https://github.com/brandon-rowe/Security/455/Project" title="Project Files">Github</a>. <!--<span class="alignright"><a href="demos/index.html" title="WebSlides Demos">View all &rsaquo;</a></span>--></p>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="#" title="Distributed Denial of Service">
+                  <figure>
+                    <img alt="Thumbnail Why WebSlides?" src="img/ddos.jpg">
+                    <figcaption>
+                      <h2>DDoS</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Keystrok Injection">
+                  <figure>
+                    <img alt="Thumbnail Landings" src="img/RubberDucky.png">
+                    <figcaption>
+                      <h2>Keylogger</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Deauthorization Attack">
+                  <figure>
+                    <img alt="Thumbnail Portfolios" src="img/Deauth.jpg">
+                    <figcaption>
+                      <h2>DeAuth</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Conclusions">
+                  <figure>
+                    <img alt="Thumbnail Apple Keynote" src="img/conclusion.jpg">
+                    <figcaption>
+                      <h2>Conclusion</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <!--<section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h4>
+                  <svg class="fa-life-ring">
+                    <use xlink:href="#fa-life-ring"></use>
+                  </svg>
+                  <strong>Guides</strong>
+                </h4>
+                <p>If you need help, here's just three tutorials. Just a basic knowledge of HTML is required:</p>
+                <ul class="description">
+                  <li><a href="demos/components.html" title="WebSlides Components">WebSlides Components</a>.</li>
+                  <li><a href="demos/classes.html" title="WebSlides Classes">WebSlides Classes</a>.</li>
+                  <li><a href="demos/media.html" title="WebSlides Media">WebSlides Media: images, videos...</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <figure><img class="aligncenter" src="static/images/setup.png" alt="WebSlides Files"></figure>
+              </div>
+              <div class="column">
+                <h4>
+                  <svg class="fa-cubes">
+                    <use xlink:href="#fa-cubes"></use>
+                  </svg>
+                  <strong>Built to expand</strong>
+                </h4>
+                <p>The best way to <strong>inspire with your content</strong> is to connect on a personal level:</p>
+                <ul class="description">
+                  <li>Background images: <a href="http://unsplash.com">Unsplash</a>.</li>
+                  <li>CSS animations: <a href="https://daneden.github.io/animate.css/">Animate.css</a>.</li>
+                  <li>Longforms: <a href="http://michalsnik.github.io/aos/"> Animate on scroll</a>.</li>
+                </ul>
+              </div>
+            </div>
+            <!--end .grid --
+          </div>
+        </section>
+        <!--<section class="aligncenter">
+          <!-- .wrap = container (width: 90%) --
+          <div class="wrap">
+            <h2><strong>Ready to Start?</strong> </h2>
+            <p class="text-intro">Create your own presentation instantly. <br>120+ premium slides ready to use.</p>
+            <p>
+              <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
+                <svg class="fa-cloud-download">
+                  <use xlink:href="#fa-cloud-download"></use>
+                </svg>
+                Free Download
+              </a>
+              <span class="try">
+                <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
+                  <svg class="fa-paypal">
+                    <use xlink:href="#fa-paypal"></use>
+                  </svg>
+                  Pay what you want.
+                </a>
+              </span>
+            </p>
+          </div>
+          <!-- .end .wrap -->
+        </section>-->
+        <section class="slide-bottom">
+          <div class="wrap">
+            <div class="content-right text-serif">
+              <h2>
+                <strong>Closing Remarks.</strong>
+                <a target="_blank" title="Files on Github" href="https://github.com/brandon-rowe/Security/455/Project">
+                  <svg class="fa-github">
+                    <use xlink:href="#fa-github"></use>
+                  </svg>
+                </a>
+              </h2>
+              <p>There are only two kinds of companies: 
+                <ol><li>Those that have been hacked. </li>
+                    <li>Those that will be. </li></ol><br>~ Robert Mueller</p> 
+              <p>Best,<br> <a href="#">Brandon Rowe</a>, <a href="#">Kyle Batson</a>, and <a href="#">Josh Howard</a>.</p>
+            </div>
+            <!-- .end .content-right -->
+          </div>
+          <!-- .end .wrap -->
+        </section>
+
+      </article>
+      <!-- end article -->
+    </main>
+    <!-- end main -->
+
+   <!-- A global footer
+
+     <footer role="contentinfo">
+      <div class="wrap">
+        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
+      </div>
+    </footer>  -->
+
+    <!-- Required -->
+    <script src="static/js/webslides.js"></script>
+    <script>
+      window.ws = new WebSlides();
+    </script>
+
+    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
+    <script defer src="static/js/svg-icons.js"></script>
+
+  </body>
+</html>

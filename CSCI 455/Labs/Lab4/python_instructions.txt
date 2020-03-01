@@ -1,0 +1,7 @@
+
+
+1.	Go to https://www.python.org and download python 3.x for your OS.
+2.	Install python and select “add to path” box during the installation process. 
+3.	Go to terminal and verify if python is there by typing “python”.
+4.	Type “pip install gmpy2” to install the python gmpy2 module.
+5.	Go to python shell and type “import gmpy2” to test if it works.

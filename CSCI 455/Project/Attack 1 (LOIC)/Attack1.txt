@@ -1,0 +1,22 @@
+Attack 1 is a DDoS attack on a live website. 
+
+Materials: 
+	Windows or Linux Test Environment
+	LOIC.exe
+	Live testing website
+
+Premise:
+	Once the LOIC software is downloaded a configured, a DDos (Distributed Denial of Service) Attack will be launched on www.cyntax.org, which is my personal website hosted by GoDaddy.
+
+Attack Details: 
+	A Distributed Denial of Service attack is where the software sends numerous packets
+of data to a web server and overloads it to the point where the website stops working for
+the intended recipients.
+
+Hypothesis:
+	Once attack is launched, my website should render slowly or even fail to load.
+
+Conclustion:
+	After initial attack, access to the website seemed unphased. Will consider alt
+website for testing that may be on a standalone.
+	

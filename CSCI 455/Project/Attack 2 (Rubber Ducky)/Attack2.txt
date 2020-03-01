@@ -1,0 +1,20 @@
+Attack 2 is an injection attack using a USB Rubber Ducky.
+
+Materials: 
+	Windows Test Machine
+	USB Rubber Ducky
+	Payloads-Scripts
+
+Premise:
+	We will add some payload scripts onto the USB Rubber Ducky and plug it into a Windows
+machine. The payload should produce some results.
+
+Attack Details: 
+	Initial test. (Hello World Script)
+
+Hypothesis:
+	Windows will pull up a prompt or notepad with the string "Hello World!!!"
+
+Conclustion:
+	
+	Initial testing was successful. Notepad++ opened with string displayed. Only requirement was plugging in the usb.
